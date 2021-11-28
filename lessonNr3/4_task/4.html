@@ -5,8 +5,9 @@
   <title>Homework</title>
 </head>
 <body>
-<!--
+
 Обязательное задание.
+
 1. Необходимо вывести в консоль массив продуктов в котором есть хоть одна
 фотография используя метод filter. Исходные данные - массив products.
 2. Необходимо отсортировать массив products используя метод sort по цене,
@@ -53,12 +54,13 @@
      return 0;
   });
   console.log(products);
-  
+
 let massiveWithPhoto = products.filter(function(product) {
   return "photos" in product && product.photos.length != 0;
   //return product.photos != 0 && product.photos != undefined; - изначально вот так решил :),но подумал, что-то тут не то.
 });
 console.log(massiveWithPhoto);
+
 
 
 
